@@ -1,1 +1,109 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0 auto;
+    background-image: url('/media/images/amor34.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: rgb(240, 183, 117) ;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgb(176, 218, 243);
+    color: #0c6819;
+    padding: 10px 0;
+}
+
+h1{
+    text-shadow: 1px 1px 2px rgb(176, 218, 243);
+     text-align: center;
+     color: #e95c24;
+     font-size: 7em;
+     font-family: 'VAG-HandWritten', sans-serif;
+     margin-bottom: 20px;
+     margin-top:0;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(241, 99, 33);
+  }
+
+  a.active {
+    background-color: dodgerblue;
+    color: rgb(255,115,0);
+    padding: 5vw;
+    }
+
+    a:hover {
+        background:none;
+        color: rgb(238, 33, 6);
+        }
+
+h2{
+    font-size: 1.3em;
+}
+
+/* Basic styling for responsiveness */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background:transparent;
+    border-radius: 20px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    color: #e95c24;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color:rgb(255,115,0);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(219, 160, 111);
+    color:rgb(238, 33, 6) ;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+}
+
