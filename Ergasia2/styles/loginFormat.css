@@ -1,0 +1,339 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../media/images/amor29.jpg'), #000;
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  h1 {
+
+    text-shadow: 1px 1px 2px rgb(176, 218, 243);
+    text-align: center;
+    color: #e95c24;
+    font-size: 18vw;
+    font-family: 'VAG-HandWritten', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .wrapper {
+    width:500px;
+    height: 640px;
+    position: absolute;
+    top: 2%;
+    max-width: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  form {
+    height:700px;
+    display:absolute ;
+    top:0;
+    margin-top: 0;
+    gap: 140px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    color:white
+  }
+
+  .input-field {
+    position: relative;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+  }
+
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color:white;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.15s ease;
+  }
+
+  .input-field input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color:white;
+  }
+
+  .input-field input:focus~label,
+  .input-field input:valid~label {
+    font-size: 0.8rem;
+    top:30px;
+    transform: translateY(-150%);
+    margin-bottom: 30px;
+  }
+
+  .forget {
+   font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color:white;
+  }
+
+  #remember {
+    font-size: 0.7;
+    accent-color:white;
+    margin-top: 30px;
+  }
+
+  .forget label {
+   font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .forget label p {
+   font-size: 0.6rem;
+    margin-left: 8px;
+  }
+
+  .wrapper a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .wrapper a:hover {
+    text-decoration: underline;
+  }
+
+  button {
+    margin-top: 10px;
+    background:white;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .register {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+  }
+
+  footer{
+    grid-area: footer;
+    position:block;
+    width: 100%;
+    background-color:rgb(8, 8, 8);
+    font-size: small;
+    color:white;
+    text-align: center;
+    padding: 8px;
+ }
+
+
+  @media (min-width: 600px) {
+    body{
+       display: block;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 850px;
+    padding: 0 10px;
+    position:absolute;
+    overflow: hidden;
+       /*background: url('../media/images/amor29.jpg'), #000;*/
+    }
+
+    h1 {
+       margin-top: 0;
+       padding: 0;
+       top: 0;
+       left:26%;
+       text-align: center;
+       align-content: center;
+       align-self:center;
+       /*justify-self: center;*/
+      position: absolute;
+      font-size: 3em;
+
+    }
+
+    h2{
+       margin-bottom: 0.8em;
+    }
+
+    button{
+       display:block-line-height;
+       position:block;
+       margin-top:0;
+  }
+
+  .forget {
+      display:flex;
+      margin-bottom: 0;
+      margin-top: 10px;
+  }
+
+  #remember{
+    margin-top: 10px;
+  }
+
+  .register{
+     font-size: 0.7rem;
+     display: flex;
+     margin-top: 10px;
+  }
+
+
+
+
+
+     .wrapper {
+    position: absolute;
+    top: 10px;
+    left: 14%;
+    width: 700px;
+    height: 400px;
+    max-height: 800px;
+    max-width:600px;
+    display:absolute;
+
+  }
+
+  form{
+   padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+
+  }
+
+  @media (min-width: 1024px) {
+    body{
+    display: block;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    position: absolute;
+
+    overflow: hidden;
+
+    background: url('../media/images/amor29.jpg'), #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    h1 {
+       margin-top: 0;
+       padding: 0;
+       top: 0;
+       left:19%;
+       text-align: center;
+       align-content: center;
+       align-self:center;
+       margin-top:5px;
+       margin-bottom: 20px;
+      position: absolute;
+      font-size: 8em;
+      z-index: 1;
+
+    }
+
+    button{
+       display:block-line-height;
+       position:block;
+       margin-bottom: 20px;
+  }
+
+  .forget {
+      display:flex;
+  }
+
+  .register{
+     display: flex;
+  }
+
+
+     .wrapper {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 50%;
+    height:90%;
+    max-height: 60%;
+    max-width:100%;
+    display:absolute;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  form{
+    position: absolute ;
+    width: 90%;
+    height:100%;
+
+    align-self: center;
+    top: 28%;
+    left: 5%;
+  }
+
+    .input-field label,
+    .input-field input {
+      font-size: 16px;
+    }
+  }

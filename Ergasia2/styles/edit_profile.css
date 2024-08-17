@@ -1,0 +1,143 @@
+body {
+    background-color: #343a40;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.container {
+    width: 73%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+.card {
+    background-color: #fff;
+    color: #343a40;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+.card-header {
+    background-color: #ffc107;
+    color: #0e0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-header h2 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+@media (min-width: 600px) {
+
+    .card{
+        width: 120%;
+        margin-left: 15%;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .form-control {
+        padding: 0.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 600px) and (min-width: 768px) {
+
+    .card{
+        width: 600px;
+        margin-left: 47%;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .form-control {
+        padding: 0.5rem;
+    }
+    .btn-primary {
+        font-size: 1.125rem;
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-body {
+        padding: 2rem;
+    }
+
+    .form-control {
+        padding: 0.75rem;
+    }
+
+    .btn-primary {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+    }
+}

@@ -1,0 +1,300 @@
+* {
+   box-sizing: border-box;
+}
+
+
+body{
+   padding:0;
+   margin: 0 auto;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background:url('../media/images/amor60.jpg') ;
+   object-fit: cover;
+}
+
+
+
+a{
+    background:none;
+    font-weight: bold;
+    color: #e95c24;
+    word-wrap:normal;
+    font-family: 'VAG-HandWritten', sans-serif;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom:20px;
+    align-self: center;
+    text-decoration: none;
+    }
+
+    a:hover {
+    background-color: rgb(229, 241, 118);
+    color: rgb(238, 33, 6);
+    }
+
+    a:hover {
+    background:none;
+    color: rgb(238, 33, 6);
+    }
+
+    a.active {
+    background-color: dodgerblue;
+    color: rgb(255,115,0);
+    padding: 5vw;
+    }
+
+.bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   z-index: -1;
+}
+
+.bg-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button{
+   border-radius: 2em;
+   text-align: center;
+   font-size:medium;
+   padding: 8px;
+   margin-bottom: 0.5em;
+   background-color: rgb(14, 7, 116);
+   color: white;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   margin-top: 1em;
+   width: 100%;
+}
+
+header,h2,h1{
+   text-align: center;
+   font-weight: bold;
+   width: 100%;
+   color:white;
+   font-weight: bold;
+    text-align: center;
+    left: 50%;
+
+}
+
+h1{
+    grid-area: "header";
+   text-shadow: 1px 1px 2px rgb(176, 218, 243);
+     text-align: center;
+     color: #e95c24;
+     font-size: 3em;
+     font-family: 'VAG-HandWritten', sans-serif;
+     margin-bottom: 20px;
+    width: 100%;
+}
+
+h2{
+   font-size: 1.3em;
+   padding-bottom: 10px;
+}
+
+header{
+    padding: 0;
+}
+
+
+.container {
+   display: grid;
+   grid-template-areas:
+       "header"
+       "main"
+       "footer";
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+
+
+
+main {
+   grid-area: main;
+   padding: 20px;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   font-size: larger;
+   color: #fdfcfc;
+   text-shadow: 1px 1px 2px rgb(4, 64, 99);
+}
+
+
+.signUp-form {
+   margin-bottom: 5px;
+}
+
+
+
+label {
+   font-weight: bold;
+}
+
+
+input{
+   width:100%;
+   padding: 10px;
+   margin-bottom: 1em;
+   border: 1px solid rgb(165, 218, 243);
+   border-radius: 20px;
+}
+
+
+footer{
+   grid-area: footer;
+   position:block;
+   width: 100%;
+   background-color:rgb(8, 8, 8);
+   font-size: small;
+   color:white;
+   text-align: center;
+   padding: 8px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-repeat: no-repeat;
+
+    }
+
+    header{
+        z-index: 1;
+        align-self: center;
+        width: 100%;
+        object-fit: cover;
+    }
+
+   h1{
+
+      font-size: 3em;
+      z-index: 1;
+      min-width: 100%;
+      object-fit: cover;
+   }
+
+   h2{
+        font-size: 1em;
+        margin-left:1%;
+   }
+
+   main{
+    align-self: center;
+   }
+
+   .bg-image{
+      width: 100%;
+      overflow:hidden;
+      object-fit: cover;
+   }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+     header{
+        padding: 0;
+        margin: 0;
+        font-size: 250%;
+        align-self: center;
+     }
+
+     h2{
+        font-size: 22px;
+     }
+
+     main{
+        align-self: center;
+     }
+
+     .bg-image{
+      height:auto;
+   }
+
+      .new-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7,minmax(50px,auto));
+        .first{
+         grid-column: 1/3;
+        }
+
+        .second{
+         grid-column: 3;
+        }
+
+        .third{
+         grid-row: 2;
+         grid-column: 1;
+        }
+
+        .fourth{
+         grid-row: 2;
+         grid-column: 2;
+        }
+
+        .fifth{
+         grid-row: 2;
+         grid-column: 3;
+        }
+
+        .sixth{
+         grid-row: 3/4;
+         grid-column: 1;
+        }
+
+        .seventh{
+         grid-row: 3;
+         grid-column: 2;
+        }
+
+        .eighth{
+         grid-row: 3;
+         grid-column: 3;
+        }
+
+        .ninth{
+         grid-row: 4;
+         grid-column: 1;
+        }
+
+        .tenth{
+         grid-row: 4;
+         grid-column: 2;
+        }
+
+
+        .eleventh{
+         grid-row: 4;
+         grid-column: 3;
+        }
+        .twelveth{
+         grid-row: 5;
+         grid-column: 2;
+        }
+
+        grid-column-gap: 3em;
+        grid-row-gap: 10px ;
+        padding: 20px;
+        max-width: 95%;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+ }
