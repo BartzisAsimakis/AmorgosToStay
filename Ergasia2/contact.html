@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amorgos-rooms</title>
+
+<link href="https://fonts.cdnfonts.com/css/vag-handwritten" rel="stylesheet">
+<link rel="stylesheet" href="styles/contactForm.css">
+</head>
+<body>
+
+
+<header><a href="index.html">Amorgos Rooms</a></header>
+    <h3>Contact Form</h3>
+
+<div class="container">
+
+
+  <form action="#" method="POST">
+    <div class="first-grid">
+        <div class="first"><label for="fname" >Όνομα</label>
+        <input type="text" id="fname" name="fname" placeholder="Το όνομα σου.." required></div>
+
+        <div class="second"><label for="lname">Επίθετο</label>
+        <input type="text" id="lname" name="lname" placeholder="Το επίθετό σου.." required></div>
+
+        <div class="third"><label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Το email σου.."  required></div>
+
+        <div class="fourth"><label for="tel">Τηλέφωνο Επικοινωνίας</label>
+        <input type="tel" id="tel" name="tel" placeholder="Το τηλέφωνό σου.." required></div>
+
+        <div class="fiveth"><label for="rooms">Αριθμός Δωματίων</label>
+        <input type="number" id="rooms" name="rooms" value="1"  min="1" placeholder="Δωμάτια.." required></div>
+
+        <div class="sixth"><label for="persons">Αριθμός Ατόμων</label>
+        <input type="number" id="people"   name="persons" value="2" min="1"  placeholder="Αριθμός ατόμων.."  readonly  required></div>
+
+        <div class="seventh"><label for="adults">Ενήλικες</label>
+        <input type="number" id="adults"   name="adults" value="2" min="0"  placeholder="Ενήλικες.." required></div>
+
+        <div class="eighth"><label for="kids">Παιδιά</label>
+        <input type="number" id="children"    name="children" value="0"   min="0" placeholder="Παιδιά.." required></div>
+
+
+        <div class="nineth"><label for="date1">Ημερομηνία Άφιξης</label>
+        <input type="date" id="date1" name="date1"  min=""   required></div>
+
+        <div class="tenth"><label for="date2">Ημερομηνία Αναχώρησης</label>
+        <input type="date" id="date2" name="date2"  min="" required></div>
+
+
+
+
+
+        <div class="eleventh"><label for="flexDates">Ευέλικτες Ημερομηνίες</label>
+        <input type="checkbox" id="flexDates" name="flexDates"  value="flexDates.." required></div>
+    </div>
+
+    <script src="scripts/minDate.js"></script>
+
+    <label for="pets">Κατοικίδια</label>
+    <select id="pets" name="pets" value="no">
+      <option value="no">Όχι</option>
+      <option value="dog">Σκύλος</option>
+      <option value="cat">Γάτα</option>
+      <option value="other">Άλλο</option>
+    </select><br><br>
+
+    <label for="subject">Σχόλια/Ερωτήσεις</label>
+    <textarea id="subject" name="subject" placeholder="Τα σχόλια σου.." style="height:200px"></textarea>
+
+    <h2>Δεν είμαι ρομπότ..</h2>
+    <p>Παρακαλώ εισάγετε τον κάτωθι κωδικό στο πεδίο:
+    <div id="captcha"></div></p>
+    <input type="text" id="user_input"  onchange="checkCaptcha()"  style="width: 150px;">
+
+    <button   type="submit"  id="submit" style="margin-bottom: 3em; width: 100%; background-color:orange; font-size: 18px;" value="Submit" disabled="false">Αποστολή Κράτησης</button>
+  </form>
+    <script src="scripts/captcha.js"></script>
+
+    <div class="footer">&#169; Copyright 2024
+        <span style="float: right;">Project by     Mirakian - Bartzis - Poulitsis</span>
+    </div>
+</div>
+
+
+<script src="scripts/contact-form.js"></script>
+</body>
+</html>
